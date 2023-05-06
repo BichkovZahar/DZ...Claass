@@ -1,14 +1,11 @@
-class Person:
-    def __init__(self , name , age):
-        self.name = name
-        self.age = age
-    def is_adult(self):
-        if self.age > 18:
-            return True
-        else:
-            return False
-rezult = Person("Захар" , 15)
-rezult1 = Person("Даша" , 19)
-print("Проверка есть ли 18 лет")
-print("Захар:" , rezult.is_adult())
-print("Даша:" , rezult1.is_adult())
+class Rectangle:
+    def __init__(self , width, height):
+        self.width = width
+        self.height = height
+    def perimeter(self):
+        return (self.width + self.height)*2
+    def area(self):
+        return self.width * self.height
+rezult = Rectangle(5 , 6)
+print("Периметр:" , rezult.perimeter())
+print("Площа:" , rezult.area())
