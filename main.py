@@ -1,11 +1,11 @@
-class Rectangle:
-    def __init__(self , width, height):
-        self.width = width
-        self.height = height
-    def perimeter(self):
-        return (self.width + self.height)*2
-    def area(self):
-        return self.width * self.height
-rezult = Rectangle(5 , 6)
-print("Периметр:" , rezult.perimeter())
-print("Площа:" , rezult.area())
+class Car:
+    def __init__(self , brand , model , year):
+        self.brand = brand
+        self.model = model
+        self.year = year
+    def finish(self):
+        return (f"Марка: {self.brand} "
+                f"\nМодель: {self.model} "
+                f"\nРік: {self.year}")
+rezult = Car("Tesla" , "100D" , 2017)
+print(rezult.finish())
